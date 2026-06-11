@@ -59,6 +59,9 @@ class Account(AbstractBaseUser):
 
     objects = MyAccountManager() # to tell the model that we are using custom manager for creating user and superuser
 
+    def full_name(self):
+        return f'{self.first_name} {self.last_name}'
+    
     def __str__(self):
         return self.email
 

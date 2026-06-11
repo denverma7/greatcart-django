@@ -32,4 +32,4 @@ urlpatterns = [
 
     #orders
     path('orders/', include('orders.urls')),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) # to serve media files in development mode
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)# to serve media files in development mode
